@@ -1,0 +1,46 @@
+{
+  "name": "my-groupme-bot-imgflip",
+  "version": "1.0.0",
+  "author": "Tomer Aberbach <tomeraberbach@gmail.com> (https://tomeraberba.ch)",
+  "description": "A my-groupme-bot plugin which integrates with Imgflip for meme generation from user input.",
+  "keywords": [
+    "my-groupme-bot-plugin",
+    "my-groupme-bot",
+    "plugin",
+    "groupme",
+    "groupme-bot",
+    "bot",
+    "chatbot",
+    "imgflip",
+    "meme",
+    "image"
+  ],
+  "homepage": "https://github.com/TomerAberbach/my-groupme-bot-imgflip",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomerAberbach/my-groupme-bot-imgflip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TomerAberbach/my-groupme-bot-imgflip/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && standard-markdown README.md",
+    "publish:git": "git add . && git push --follow-tags",
+    "publish:patch": "npm test && npm version patch -m \"%s\" && npm publish && npm run publish:git",
+    "publish:minor": "npm test && npm version minor -m \"%s\" && npm publish && npm run publish:git",
+    "publish:major": "npm test && npm version major -m \"%s\" && npm publish && npm run publish:git"
+  },
+  "dependencies": {
+    "imgflip": "^1.0.4",
+    "request": "latest"
+  },
+  "devDependencies": {
+    "standard": "*",
+    "standard-markdown": "*"
+  }
+}
