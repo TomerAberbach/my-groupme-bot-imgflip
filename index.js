@@ -32,7 +32,7 @@ module.exports = opts => {
                 },
                 json: true
               },
-              (err, data) => this.send(err ? `Something went wrong... (${err.message})` : '', err ? undefined : data['body']['payload']['url'])
+              (err, data) => this.send(err ? `Something went wrong... (${err.message})` : '', err ? undefined : data['body']['data']['url'])
             ))
           )
         } else {
