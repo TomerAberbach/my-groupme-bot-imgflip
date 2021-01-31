@@ -103,5 +103,4 @@ $ npm i -d && npm test
 
 ## License
 
-Copyright © 2018 [Tomer Aberbach](https://github.com/TomerAberbach)
-Released under the [MIT license](https://github.com/TomerAberbach/my-groupme-bot-imgflip/blob/master/LICENSE).
+[MIT](https://github.com/TomerAberbach/my-groupme-bot-imgflip/blob/main/license) © [Tomer Aberbach](https://github.com/TomerAberbach)
